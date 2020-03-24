@@ -8,9 +8,6 @@ library(cluster)
 ###################
 # Load results #
 ###################
-# Working directory
-setwd("/your/working/directory/BUSseq_implementation-1.0/MouseHematopoietic/")
-
 load("BUSseq/BUSseq_results.RData")
 comparison_list <- c("liger", "MNN", "scanorama", "scVI", "Seurat", "ZINBWaVE")
 num_comparison <- length(comparison_list)
