@@ -52,54 +52,54 @@ gene_list <- unlist(read.table("../RawCountData/gene_list_hemat_v1.txt",stringsA
 K <- 6
 
 # load w_est
-w.est <- read.table("Inference_K6/w_est.txt")
+w.est <- read.table("../Inference_K6/w_est.txt")
 w_BUSseq <- unlist(w.est)
 
 # load alpha_est
 # alpha.post <- as.matrix(read.big.matrix("alpha_post.txt",sep=" ",skip=num.burntin,type="double"))
-alpha.est <- read.table("Inference_K6/alpha_est.txt")
+alpha.est <- read.table("../Inference_K6/alpha_est.txt")
 alpha.est <- unlist(alpha.est)
 # load beta_est
-beta.est <- read.table("Inference_K6/beta_est.txt")
+beta.est <- read.table("../Inference_K6/beta_est.txt")
 beta.est <- matrix(unlist(beta.est),G,K)
 logmu.est<-beta.est+alpha.est
 
 # load nu_est
-nu.est <- read.table("Inference_K6/nu_est.txt")
+nu.est <- read.table("../Inference_K6/nu_est.txt")
 nu.est <- matrix(unlist(nu.est),G,B)
 
 # load delta_est
-delta.est <- read.table("Inference_K6/delta_est.txt")
+delta.est <- read.table("../Inference_K6/delta_est.txt")
 delta.est <- unlist(delta.est)
 # plot(delta.est,col=rep(1:B,nb) + 1)
 
 
 # load gamma_est
-gamma.est <- read.table("Inference_K6/gamma_est.txt")
+gamma.est <- read.table("../Inference_K6/gamma_est.txt")
 gamma.est <- matrix(unlist(gamma.est),B,2)
 
 
 # load phi_est
-phi.est <- read.table("Inference_K6/phi_est.txt")
+phi.est <- read.table("../Inference_K6/phi_est.txt")
 phi.est <- matrix(unlist(phi.est),G,B)
 
 # load pi_est
-pi.est <- read.table("Inference_K6/pi_est.txt")
+pi.est <- read.table("../Inference_K6/pi_est.txt")
 pi.est <- matrix(unlist(pi.est),B,K)
 order.est<-order(pi.est[1,],decreasing = T)
 
 # load p_est
-p.est <- read.table("Inference_K6/p_est.txt")
+p.est <- read.table("../Inference_K6/p_est.txt")
 
 # load tau0_est
-tau0.est <- read.table("Inference_K6/tau0_est.txt")
+tau0.est <- read.table("../Inference_K6/tau0_est.txt")
 
 # load PPI_est
-PPI.est <- read.table("Inference_K6/PPI_est.txt")
-D.est <- unlist(read.table("Inference_K6/IG_est.txt"))
+PPI.est <- read.table("../Inference_K6/PPI_est.txt")
+D.est <- unlist(read.table("../Inference_K6/IG_est.txt"))
 
 # load X_imputed
-x_imputed <- read.table("Inference_K6/x_imputed.txt")
+x_imputed <- read.table("../Inference_K6/x_imputed.txt")
 
 ############################
 # Batch effects correction #
