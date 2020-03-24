@@ -1,7 +1,7 @@
 # calculate the acceptance rate in the simulation study
 rm(list=ls())
 library(bigmemory)
-library(xtable)
+
 
 setwd("ConvergenceDiagnostic")
 proj <- "hemat"

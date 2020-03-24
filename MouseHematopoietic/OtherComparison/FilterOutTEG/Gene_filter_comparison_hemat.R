@@ -1,7 +1,6 @@
 #Apply BUSseq to the hematopoietic study.
 rm(list=ls())
 library(mclust) # For ARI
-library(xtable)
 library("devtools")
 source_url("https://raw.githubusercontent.com/obigriffith/biostar-tutorials/master/Heatmaps/heatmap.3.R")
 
@@ -57,7 +56,7 @@ table(metadata$CellType, w_cur)[c(4,6,3,7,1,2,5),c(6,4,1,2,5,3)]
 Com_oc <- table(w_cur, w_ori)[c(6,4,1,2,5,3),c(6,4,1,2,3,5)]
 colnames(Com_oc) <- paste0("Cluster",1:K)
 rownames(Com_oc) <- paste0("Cluster",1:K)
-xtable(Com_oc)
+print(Com_oc)
 
 ###########################
 # Compare intrinsic genes #

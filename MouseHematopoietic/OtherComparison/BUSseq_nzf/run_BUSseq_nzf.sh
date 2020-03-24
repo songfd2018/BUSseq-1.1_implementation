@@ -1,6 +1,6 @@
 #!/bin/sh
-
 cd OtherComparison/BUSseq_nzf
+
 # compile the source code
 make
 

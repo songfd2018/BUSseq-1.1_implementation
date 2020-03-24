@@ -63,11 +63,10 @@ ARI_values[7] <- ARI_ZINBWaVE
 
 write.table(ARI_values, "Results/ARI_values.txt",col.names = F)
 
+# Calculating the ARI by robust k-means clustering
 ARI_kmeans <- rep(NA, num_comparison + 1)
 names(ARI_kmeans) <- c("BUSseq", comparison_list)
 
-
-# Calculating the ARI by robust k-means clustering
 ARI_kmeans[1] <- ARI_BUSseq_kmeans
 ARI_kmeans[2] <- ARI_liger_kmeans
 ARI_kmeans[3] <- ARI_MNN_kmeans

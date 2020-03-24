@@ -6,7 +6,7 @@ setwd("BUSseq")
 proj <- "Hemat"
 b <- 2
 
-load("../BUSseq_workspace.RData")
+load("BUSseq_workspace.RData")
 
 set.seed(123)
 Num_sel <- table(w_BUSseq[1:nb[2]+nb[1]])
