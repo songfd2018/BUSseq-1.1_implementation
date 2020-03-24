@@ -180,4 +180,4 @@ ggplot(dat_frame, aes(x= Var1, y= Var2, colour= col)) +
 dev.off()
 
 # Store the workspace
-save(ARI_ZINBWaVE, ARI_ZINBWaVE_kmeans, tsne_ZINBW_dist, zinb_batch@W,file = "ZINBWaVE_results.RData")
+save(ARI_ZINBWaVE, ARI_ZINBWaVE_kmeans, tsne_ZINBW_dist, zinb_batch,file = "ZINBWaVE_results.RData")
