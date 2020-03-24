@@ -632,3 +632,4 @@ plot3d(BUSseq_linage_3d, lwd = 3, add = TRUE)
 
 # Store the workspace
 save(ARI_BUSseq, ARI_BUSseq_kmeans, tsne_BUSseq_dist,x_intrinsic, file = "BUSseq_results.RData")
+save.image("BUSseq_workspace.RData")
